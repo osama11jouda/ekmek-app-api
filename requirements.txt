@@ -1,0 +1,11 @@
+Flask
+Flask-JWT-Extended
+Flask-RESTful
+Flask-SQLAlchemy
+Flask-Uploads
+flask-marshmallow
+marshmallow
+marshmallow-sqlalchemy
+PyMySQL
+cryptography
+uwsgi
