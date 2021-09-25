@@ -5,9 +5,7 @@ from flask_restful import Api
 from marshmallow import ValidationError
 from flask_uploads import configure_uploads, patch_request_class
 
-from db import db
 from libs.image_helper import IMAGE_SET
-from ma import ma
 from models.blocklist_model import BlockListModel
 from resources.address import UserAddress, AddressList
 from resources.image import UserAvatar, DeleteAvatarImage, ItemImage, DeleteItemImage
@@ -77,13 +75,4 @@ api.add_resource(OrderIsDelivered, '/admin/order/delivered/<int:order_id>')  # g
 
 
 if __name__ == '__main__':
-    db.init_app(app)
-    ma.init_app(app)
-
-
-    @app.before_first_request
-    def create_tables():
-        db.create_all()
-
-
     app.run(port=5000)
