@@ -17,7 +17,7 @@ from resources.user import RegisterUser, UserLogin, RefreshToken, UserLogout, Us
 app = Flask(__name__)
 load_dotenv('.env', verbose=True)
 app.config.from_object("default_config")
-app.config.from_envvar("APPLICATION_SETTINGS")
+# app.config.from_envvar("default_config.py")
 api = Api(app)
 jwt = JWTManager(app)
 configure_uploads(app, IMAGE_SET)
