@@ -8,5 +8,5 @@ marshmallow
 marshmallow-sqlalchemy
 PyMySQL
 cryptography
-python-dotenv
+git+https://github.com/theskumar/python-dotenv.git
 uwsgi
