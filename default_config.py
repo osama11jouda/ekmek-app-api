@@ -6,7 +6,7 @@ SQLALCHEMY_DATABASE_URI = "postgresql://pytkniirytqjxc:89c62818f4a189a2429b2451b
 
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-JWT_SECRET_KEY = os.environ.get("JWT_SECRET_KEY")
-SECRET_KEY = os.environ.get("APP_SECRET_KEY")
+JWT_SECRET_KEY = "ekmek_app_api_2021#09#21@01" # os.environ.get("JWT_SECRET_KEY")
+SECRET_KEY = "ekmek.app@2021.09.21#%^app-api^%#" # os.environ.get("APP_SECRET_KEY")
 
 UPLOADED_IMAGES_DEST = os.path.join('static', 'images')
