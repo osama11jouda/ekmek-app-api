@@ -74,5 +74,5 @@ api.add_resource(OrderIsShipped, '/admin/order/shipped/<int:order_id>')  # get
 api.add_resource(OrderIsDelivered, '/admin/order/delivered/<int:order_id>')  # get
 
 
-if __name__ == '__main__':
-    app.run(port=5000)
+# if __name__ == '__main__':
+app.run(port=5000)
