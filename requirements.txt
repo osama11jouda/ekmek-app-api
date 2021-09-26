@@ -8,4 +8,5 @@ marshmallow
 marshmallow-sqlalchemy
 PyMySQL
 cryptography
+python-dotenv
 uwsgi
