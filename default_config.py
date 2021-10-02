@@ -2,11 +2,11 @@ import os
 
 DEBUG = True
 
-SQLALCHEMY_DATABASE_URI = "postgresql://pytkniirytqjxc:89c62818f4a189a2429b2451b5cbe8b2deb4c9b729f64a1222b556a1e422287c@ec2-52-19-96-181.eu-west-1.compute.amazonaws.com:5432/d9n0em3nsumcvp"# os.environ.get("DATABASE_URL")  # "sqlite:///data.db"
+SQLALCHEMY_DATABASE_URI = "postgresql:"# os.environ.get("DATABASE_URL")  # "sqlite:///data.db"
 
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-JWT_SECRET_KEY = "ekmek_app_api_2021#09#21@01" # os.environ.get("JWT_SECRET_KEY")
-SECRET_KEY = "ekmek.app@2021.09.21#%^app-api^%#" # os.environ.get("APP_SECRET_KEY")
+JWT_SECRET_KEY = "key1" # os.environ.get("JWT_SECRET_KEY")
+SECRET_KEY = "key2"
 
 UPLOADED_IMAGES_DEST = os.path.join('static', 'images')
